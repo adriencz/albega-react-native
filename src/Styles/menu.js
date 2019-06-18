@@ -4,8 +4,8 @@ const styles = StyleSheet.create({
     gradient_logo: {
         marginLeft: 0,
         marginRight: 0,
-        borderBottomWidth: 6,
-        borderColor: '#ced5ff'
+        // borderBottomWidth: 6,
+        // borderColor: '#ced5ff'
     },
     logo: {
         fontFamily: 'odin',
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         paddingBottom: 0,
         paddingLeft: 30,
         marginBottom: 0,
-        color: 'white'
+        color: 'white',
     },
     menu_container: {
         padding: 20,

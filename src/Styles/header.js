@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     menu_circle: {
         width: '100%',
         height: 5,
-        borderRadius: 1,
+        borderRadius: 5,
         margin: 1.5,
         backgroundColor: '#fafafa',
     }

@@ -15,13 +15,13 @@ const styles = StyleSheet.create({
     gradient_container: {
         marginBottom: 0,
         borderRadius: 0,
-        borderBottomWidth: 6,
-        borderColor: '#ced5ff'
+        // borderBottomWidth: 6,
+        // borderColor: '#ced5ff'
     },
     average_container: {
         marginRight: 0,
         marginLeft: 0,
-        paddingBottom: 5,
+        paddingBottom: 20,
     },
     average_city_container: {
         height: 60,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 22,
         marginLeft: 5,
-        fontFamily: 'coolvetica',
+        fontFamily: 'cabin',
         // paddingTop: 17,
     },
     number_measurements: {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         padding: 0,
         color: 'white',
         fontSize: 17,
-        fontFamily: 'rounded',
+        fontFamily: 'cabin',
     },
     average_time: {
         margin: 20,
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         marginBottom: 0,
         color: 'white',
         fontSize: 17,
-        fontFamily: 'rounded',
+        fontFamily: 'cabin',
     },
     average_rad_container: {
         flex: 1,
@@ -64,16 +64,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginLeft: 20,
-        marginRight: 20,
+        marginRight: 25,
         marginTop: 5,
         marginBottom: 0
     },
     average_rad: {
         color: 'white',
-        fontSize: 21,
-        padding: 0,
-        fontFamily: 'odin',
-        paddingTop: 17,
+        fontSize: 19,
+        paddingRight: 5
     },
 
 
@@ -107,9 +105,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     measure_rad: {
-        fontSize: 17,
+        fontSize: 19,
         flex: 1,
-        fontFamily: 'odin'
+        fontFamily: 'goth',
     },
     measure_date: {
         fontSize: 14,

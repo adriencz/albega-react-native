@@ -12,7 +12,7 @@ import NavigationService from '../Navigation/NavigationService'
 class Header extends Component {
     render() {
         return (
-            <LinearGradient colors={['#396afc', '#03199e']} style={styles.gradient_container} start={[0.0, 0.5]} end={[1.0, 0.5]}>
+            <LinearGradient colors={['#396afc', '#2948ff']} style={styles.gradient_container} start={[0.0, 0.5]} end={[1.0, 0.5]}>
                 <View style={styles.header_container}>
                     <View style={styles.input_container}>
                         <TextInput style={[iOSUIKit.subheadEmphasized, styles.input_search]}

@@ -21,7 +21,9 @@ class App extends Component {
     await Font.loadAsync({
       'rounded': require('./assets/fonts/rounded_el.ttf'),
       'odin': require('./assets/fonts/odin.otf'),
-      'coolvetica': require('./assets/fonts/coolvetica_rg.ttf')
+      'goth': require('./assets/fonts/goth.ttf'),
+      'coolvetica': require('./assets/fonts/coolvetica_rg.ttf'),
+      'cabin': require('./assets/fonts/cabin.ttf'),
     }).then(() => this.setState({ loading: false }))
   }
 

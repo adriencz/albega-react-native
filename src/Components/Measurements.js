@@ -4,11 +4,10 @@ import { getAllMeasurements } from '../API/OpenRadiation/OpenRadiation'
 import { iOSUIKit } from 'react-native-typography'
 import { Ionicons, MaterialIcons } from '@expo/vector-icons'
 
-const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
 import styles from '../Styles/measurements'
 import AverageRad from './AverageRad'
-import Measure from './Measure'
+import MeasureItem from './MeasureItem'
 import Header from '../Partials/_Header';
 
 class Measurements extends Component {
@@ -36,9 +35,9 @@ class Measurements extends Component {
                 <ScrollView style={styles.measurements_container}>
                     <Header />
                     <AverageRad />
-                    <AnimatedFlatList
+                    <FlatList
                         data={this.state.measurements}
-                        renderItem={({ item, index }) => <Measure index={index} measure={item} />}
+                        renderItem={({ item, index }) => <MeasureItem onPress={() => this.props.navigation.navigate('Maps')} index={index} measure={item} />}
                         keyExtractor={item => item.reportUuid}
                     />
                 </ScrollView>

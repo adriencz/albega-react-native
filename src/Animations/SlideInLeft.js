@@ -8,7 +8,7 @@ class FadeIn extends Component {
     constructor(props) {
         super(props)
 
-        this.opacity = new Animated.Value(0)
+        this.opacity = new Animated.Value(Dimensions.get('window').width)
     }
 
     componentDidMount() {
@@ -16,11 +16,11 @@ class FadeIn extends Component {
             Animated.timing(
                 this.opacity,
                 {
-                    useNativeDriver: true,
-                    toValue: 1,
+                    toValue: 0,
                     duration: 700,
                     easing: Easing.elastic(1),
                     delay: this.props.index * 200,
+                    useNativeDriver: true,
                 }
             ).start()
         }, 100)
@@ -28,7 +28,7 @@ class FadeIn extends Component {
 
     render() {
         return (
-            <Animated.View style={{ opacity: this.opacity }}>
+            <Animated.View style={{ transform: [{ translateX: this.opacity }] }}>
                 {this.props.children}
             </Animated.View>
         )
